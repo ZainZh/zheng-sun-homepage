@@ -26,5 +26,8 @@ Before publishing, review the supplied Chinese CV (including its phone numbers a
 - Industrial sorting video: user-supplied `mightysort-online-20231126.mp4`. The original is unchanged. The web copy preserves the full approximately 18-second footage and audio, uses H.264/AAC at 1280×720, and covers the fixed lower-right company logo with an opaque navy project label at the user's request. Playback is muted by default, with native controls; the poster comes from the processed video at 7 seconds.
 - 4D interaction method thumbnail: https://anonymousprojectpage.github.io/predict4dgsroi/method_real.png (from the user's supplied project page).
 - The 4D interaction project links to the user-supplied page: https://anonymousprojectpage.github.io/predict4dgsroi/#method
-- Co-first authorship on the 4D interaction paper follows the user's confirmation. Residual Action Tokenization remains in the publication list; its separate Research entry has been removed.
+- Co-first authorship on the 4D interaction and Smart Suction Cup papers follows the user's confirmation. Residual Action Tokenization remains in the publication list; its separate Research entry has been removed.
 - No citation counts, Google Scholar link, unverified performance claims, or unavailable paper links are included.
+
+- The 4D interaction summary is based on the user-supplied manuscript `ICRA27_8334_MS (2).pdf`. The unchanged PDF is available at `assets/papers/generating-4d-robot-object-interactions.pdf`, linked from Research and Publications.
+- About emphasizes VLA models, 4D world models, perception-guided grasping, and current work on self-improving robotic systems.

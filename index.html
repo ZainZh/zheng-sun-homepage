@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zheng Sun is a Robotics PhD student at The Chinese University of Hong Kong. Research in robot manipulation, 4D interaction world models, action representations, and perception-guided grasping.">
+  <meta name="description" content="Zheng Sun is a Robotics PhD student at The Chinese University of Hong Kong. Research in robot manipulation, 4D interaction world models, vision-language-action (VLA) models, self-improving robotic systems, and perception-guided grasping.">
   <meta name="theme-color" content="#183650">
   <title>Zheng Sun | Robotics · CUHK</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23183650'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='21' fill='white'%3EZ%3C/text%3E%3C/svg%3E">
@@ -32,9 +32,9 @@
     <main>
       <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I am a PhD student in Robotics at <strong>The Chinese University of Hong Kong</strong>, based at the T Stone Robotics Institute. I work on robot manipulation, with a focus on <strong>4D interaction world models, action representations, and perception-guided grasping</strong>.</p>
-        <p>My experience spans research and real-world deployment: from studying robot–object interactions and autoregressive robot policies to developing vision and grasping algorithms for an industrial sorting system deployed in Hong Kong.</p>
-        <p class="interests"><span>Research interests</span>World models · VLA · Robot grasping · Self-improving robotic systems</p>
+        <p>I am a PhD student in Robotics at <strong>The Chinese University of Hong Kong</strong>, based at the T Stone Robotics Institute. I work on robot manipulation, with a focus on <strong>4D interaction world models, vision–language–action (VLA) models, and perception-guided grasping</strong>.</p>
+        <p>I am currently working on <strong>self-improving robotic systems</strong>. My experience spans 4D robot–object interaction generation and real-world robot deployment, including developing the vision and grasping algorithms for an industrial sorting system operating in Hong Kong.</p>
+        <p class="interests"><span>Research interests</span>World models · VLA models · Robot grasping · Self-improving robotic systems</p>
       </section>
 
       <section id="research">
@@ -49,9 +49,10 @@
             <p class="eyebrow">WORLD MODELS</p>
             <h3>4D Robot–Object Interaction World Models</h3>
             <p class="project-role">World-model workstream lead <span>Aug 2025–present</span></p>
-            <p>I lead world-model research within a national major science and technology project under MIIT, studying how 3D object states evolve through robot interaction. My research explores video diffusion distillation, long-term memory, and dynamics informed by physical modeling and causal reasoning.</p>
+            <p>We distill video diffusion priors into <strong>explicit 4D robot–object interactions</strong> without large-scale robot-specific 4D training data. A hybrid Gaussian representation couples deformable objects with articulated robots, preserving robot geometry and joint limits. Two-stage optimization first generates object and robot motion jointly, then refines robot trajectories to improve contact consistency and motion smoothness.</p>
+            <p>The generated interactions support <strong>multi-view rendering, cross-robot transfer, and policy-training data generation</strong>. We demonstrate the downstream use of this data by training diffusion policies for five real-world manipulation tasks.</p>
             <p class="related">Related work: <a href="#paper-4d">Generating 4D Robot-Object Interactions</a></p>
-            <div class="resource-links"><a href="https://anonymousprojectpage.github.io/predict4dgsroi/#method" target="_blank" rel="noopener">Project page</a></div>
+            <div class="resource-links"><a href="assets/papers/generating-4d-robot-object-interactions.pdf" target="_blank" rel="noopener">Paper (PDF)</a><a href="https://anonymousprojectpage.github.io/predict4dgsroi/#method" target="_blank" rel="noopener">Project page</a></div>
           </div>
         </article>
 
@@ -68,7 +69,7 @@
             <h3>Object-Centric Semantic Fields</h3>
             <p class="project-role">First-author research</p>
             <p>A continuous, object-centric semantic representation that can be queried at explicit 3D locations. It provides functional-part cues for manipulation, connecting object geometry with where and how a robot should interact. My broader aim is to connect such object-centric representations with vision–language–action (VLA) policies.</p>
-            <div class="resource-links"><a href="https://zainzh.github.io/beyond-point-attached-semantics/" target="_blank" rel="noopener">Project page</a><a href="#paper-semantics">Paper details</a></div>
+            <div class="resource-links"><a href="assets/papers/beyond-point-attached-semantics.pdf" target="_blank" rel="noopener">Paper (PDF)</a><a href="https://zainzh.github.io/beyond-point-attached-semantics/" target="_blank" rel="noopener">Project page</a></div>
           </div>
         </article>
 
@@ -91,9 +92,9 @@
         <div class="section-heading"><h2>Publications</h2></div>
         <ol class="publications">
           <li id="paper-spectral"><h3><a href="https://doi.org/10.1109/LRA.2025.3575654" target="_blank" rel="noopener">A Hyperspectral Imaging Guided Robotic Grasping System</a></h3><p><strong>Zheng Sun</strong>, Zhipeng Dong, Shixiong Wang, Zhongyi Chu, Fei Chen</p><p class="venue">IEEE Robotics and Automation Letters (RA-L), 2025 <span class="authorship">First author</span></p></li>
-          <li><h3><a href="https://ieeexplore.ieee.org/abstract/document/10610153" target="_blank" rel="noopener">Regrasping on Printed Circuit Boards with the Smart Suction Cup</a></h3><p>Jungpyo Lee*, <strong>Zheng Sun*</strong>, Zhipeng Dong, Fei Chen, Hannah S. Stuart</p><p class="venue">IEEE ICRA, 2024 <span class="authorship">* Equal contribution</span></p></li>
-          <li id="paper-4d"><h3>Generating 4D Robot-Object Interactions by Distilling Video Diffusion Models</h3><p>Zhihao Li*, <strong>Zheng Sun*</strong>, Zixin Tang, Zhuo Li, Dianxi Li, Fei Chen</p><p class="venue">ICRA · Under review <span class="authorship">Co-first author · * Equal contribution</span></p></li>
-          <li id="paper-semantics"><h3>Beyond Point-Attached Semantics: Stable Object-Centric Semantic Fields for Robust Manipulation</h3><p><strong>Zheng Sun</strong>, Lerong Zhang, Zhihao Li, Zhuo Li, Quentin Rouxel, Fei Chen</p><p class="venue">ICRA · Under review <span class="authorship">First author</span></p></li>
+          <li><h3><a href="https://ieeexplore.ieee.org/abstract/document/10610153" target="_blank" rel="noopener">Regrasping on Printed Circuit Boards with the Smart Suction Cup</a></h3><p>Jungpyo Lee*, <strong>Zheng Sun*</strong>, Zhipeng Dong, Fei Chen, Hannah S. Stuart</p><p class="venue">IEEE ICRA, 2024 <span class="authorship">Co-first author · * Equal contribution</span></p></li>
+          <li id="paper-4d"><h3><a href="assets/papers/generating-4d-robot-object-interactions.pdf" target="_blank" rel="noopener">Generating 4D Robot-Object Interactions by Distilling Video Diffusion Models</a></h3><p>Zhihao Li*, <strong>Zheng Sun*</strong>, Zixin Tang, Zhuo Li, Dianxi Li, Fei Chen</p><p class="venue">ICRA · Under review <span class="authorship">Co-first author · * Equal contribution</span></p></li>
+          <li id="paper-semantics"><h3><a href="assets/papers/beyond-point-attached-semantics.pdf" target="_blank" rel="noopener">Beyond Point-Attached Semantics: Stable Object-Centric Semantic Fields for Robust Manipulation</a></h3><p><strong>Zheng Sun</strong>, Lerong Zhang, Zhihao Li, Zhuo Li, Quentin Rouxel, Fei Chen</p><p class="venue">ICRA · Under review <span class="authorship">First author</span></p></li>
           <li><h3><a href="https://doi.org/10.1109/ROBIO64047.2024.10907439" target="_blank" rel="noopener">PRISM: A Polyhedral Reflective Imaging Scanning Mechanism for Hyperspectral Applications</a></h3><p><strong>Zheng Sun</strong>, Zhipeng Dong, Shixiong Wang, Fei Chen</p><p class="venue">IEEE ROBIO, 2024 <span class="authorship">First author</span></p></li>
           <li><h3><a href="https://doi.org/10.1007/978-3-031-13844-7_58" target="_blank" rel="noopener">Mixline: A Hybrid Reinforcement Learning Framework for Long-Horizon Bimanual Coffee Stirring Task</a></h3><p><strong>Zheng Sun</strong>, Zhiqi Wang, Junjia Liu, Miao Li, Fei Chen</p><p class="venue">ICIRA, 2022 <span class="authorship">First author</span></p></li>
           <li id="paper-tokens"><h3>Residual Action Tokenization for Autoregressive Robot Policies</h3><p>Dijia Zhan, Zhuo Li, <strong>Zheng Sun</strong>, Xuemiao Xu, Jinyi Li, Wenjun Wang, Jie Tang</p><p class="venue">ICLR · Under review</p></li>
@@ -105,6 +106,7 @@
         <h2>Research &amp; Engineering Experience</h2>
         <div class="experience-item">
           <div class="entry-heading"><h3>Vision-Guided Robotic Sorting</h3><span>2022–2024</span></div>
+          <p class="entry-subtitle"><strong>Project Leader</strong></p>
           <div class="sorting-layout">
           <figure class="sorting-demo">
             <video controls muted playsinline preload="none" poster="assets/industrial-sorting-poster.jpg" aria-label="Vision-guided robotic sorting operating in an industrial factory">
@@ -114,7 +116,7 @@
             <figcaption>Factory demo · 18 seconds</figcaption>
           </figure>
           <dl class="experience-facts">
-            <div><dt>Role</dt><dd>Developed all vision, grasping, and robot-execution algorithms.</dd></div>
+            <div><dt>Role</dt><dd><strong>Project Leader</strong> — led system development and deployment; developed all vision, grasping, and robot-execution algorithms.</dd></div>
             <div><dt>Methods</dt><dd>Visual recognition · Point-cloud-guided grasping · Conveyor tracking</dd></div>
             <div><dt>Deployment</dt><dd>Deployed at an automotive scrap sorting factory in Yuen Long, Hong Kong.</dd></div>
             <div><dt>Recognition</dt><dd>Follow-on product <strong>MightySort</strong> — Geneva Inventions Gold Medal, 2024.</dd></div>
